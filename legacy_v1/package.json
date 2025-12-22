@@ -1,0 +1,11 @@
+{
+  "name": "ai-workout-planner",
+  "version": "1.0.0",
+  "description": "AI-powered workout planner and fitness chatbot",
+  "scripts": {
+    "dev": "npx http-server -c-1 -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
