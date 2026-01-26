@@ -1,16 +1,177 @@
-# React + Vite
+FitAI-Pro – AI Workout Planner Chatbot
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FitAI-Pro is an AI-powered workout planner chatbot that helps users generate personalized fitness plans through an interactive chat-based interface. The application allows users to input their fitness goals, experience level, and preferences, and then provides customized workout recommendations using Artificial Intelligence.
 
-Currently, two official plugins are available:
+The project is built using React with Vite for fast and efficient frontend development and integrates AI logic through JavaScript to deliver smart and user-friendly fitness guidance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Objectives
 
-## React Compiler
+To build an AI-driven workout planning chatbot
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To provide personalized fitness routines for users
 
-## Expanding the ESLint configuration
+To create a clean and responsive UI using React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To demonstrate practical use of AI in real-world applications
+
+To follow modern frontend development practices using Vite
+
+🧠 Key Features
+
+💬 Interactive chatbot-based workout planner
+
+🏋️ Personalized workout plans
+
+🎯 Goal-based fitness suggestions (weight loss, muscle gain, general fitness)
+
+⏱️ Time-efficient workout recommendations
+
+🧑‍🤝‍🧑 Suitable for beginners, intermediate, and advanced users
+
+⚡ Fast and lightweight application
+
+🛠️ Technologies Used
+Frontend
+
+React.js – Component-based UI development
+
+Vite – Fast build tool and development server
+
+JavaScript – Core logic and AI interaction
+
+HTML & CSS – Structure and styling
+
+Tools
+
+VS Code – Development environment
+
+Git & GitHub – Version control
+
+ESLint – Code quality and linting
+
+🏗️ System Architecture
+
+User interacts with the chatbot through the UI
+
+User inputs fitness goals and preferences
+
+JavaScript logic processes the input
+
+AI logic generates a personalized workout plan
+
+The response is displayed in chatbot format
+
+📂 Project Structure
+FitAI-Pro/
+│
+├── legacy_v1/           # Initial version of the project
+│
+├── public/
+│   └── vite.svg         # Vite assets
+│
+├── src/
+│   ├── assets/          # Images and static assets
+│   ├── components/     # React components
+│   ├── hooks/          # Custom React hooks
+│   ├── App.jsx         # Main application component
+│   ├── App.css         # App-level styling
+│   ├── index.css       # Global styles
+│   └── main.jsx        # Application entry point
+│
+├── index.html           # Main HTML file
+├── script.js            # JavaScript logic
+├── styles.css           # Custom styles
+├── package.json         # Project dependencies
+├── package-lock.json    # Dependency lock file
+├── vite.config.js       # Vite configuration
+├── eslint.config.js     # ESLint configuration
+├── .gitignore           # Ignored files
+└── README.md            # Project documentation
+
+⚙️ Installation & Setup
+
+Clone the repository
+
+git clone https://github.com/arunchary45/FitAI-Pro.git
+
+
+Navigate to the project folder
+
+cd FitAI-Pro
+
+
+Install dependencies
+
+npm install
+
+
+Start the development server
+
+npm run dev
+
+
+Open the app in your browser
+(Default: http://localhost:5173)
+
+🧪 Sample Input
+Goal: Weight Loss
+Experience Level: Beginner
+Workout Duration: 30 minutes
+Days per Week: 5
+
+📤 Sample Output
+Day 1: Full Body Workout
+- Jumping Jacks – 3 sets
+- Squats – 3x15
+- Push-ups – 3x10
+- Plank – 30 seconds
+...
+
+🚀 Future Enhancements
+
+Integration of backend using FastAPI
+
+User authentication and profile management
+
+Workout history tracking
+
+Diet and nutrition recommendations
+
+Mobile-friendly UI improvements
+
+Voice-based chatbot interaction
+
+📚 Use Cases
+
+Beginners starting their fitness journey
+
+Students with limited time for workouts
+
+Home workout planning
+
+AI-based fitness assistant applications
+
+👨‍🎓 Academic Relevance
+
+This project demonstrates:
+
+Application of Artificial Intelligence
+
+Frontend development using React & Vite
+
+Chatbot-based system design
+
+Real-world problem solving using AI
+
+Modern JavaScript development practices
+
+👤 Author
+
+Arun Chaudhary
+B.Tech CSE
+Lovely Professional University
+
+📜 Conclusion
+
+FitAI-Pro highlights the effective use of AI and modern frontend technologies to solve real-world fitness planning problems. The project delivers a fast, interactive, and intelligent workout planner that can be further extended into a full-scale fitness platform.
