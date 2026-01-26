@@ -190,4 +190,4 @@ Lovely Professional University
 
 ## 📜 Conclusion
 
-FitAI-Pro highlights the effective use of **AI and modern frontend technologies** to solve real-world fitness planning problems. The project delivers a fast, interactive, and intelligent workout planner that can be further extended into a full-scale fitness platform.FitAI-Pro – AI Workout Planner Chatbot
+FitAI-Pro highlights the effective use of **AI and modern frontend technologies** to solve real-world fitness planning problems. The project delivers a fast, interactive, and intelligent workout planner that can be further extended into a full-scale fitness platform.
