@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyDYcmEQIFH4zzrJExBuWGoMUnJTstdnGSI";
+const API_KEY = "AIzaSyAJHzNFafG0Dcmq18H9BM1OrqkkpGT4caQ";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export function useGemini() {
