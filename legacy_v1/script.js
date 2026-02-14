@@ -1,9 +1,43 @@
 // script.js
 
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
+import { API_KEY } from "./config.js";
 
-// Initialize the AI with your API key
-const genAI = new GoogleGenerativeAI("AIzaSyCw8Jt2X9JWi6BfOOSCgkJ0a8tfW1x5708");
+// Initialize the AI
+let genAI;
+
+function getApiKey() {
+    // 1. Try config.js (Prioritize user provided key)
+    if (API_KEY) return API_KEY;
+
+    // 2. Try environment variables (Vite)
+    try {
+        if (import.meta.env && import.meta.env.VITE_GEMINI_API_KEY) {
+            return import.meta.env.VITE_GEMINI_API_KEY;
+        }
+    } catch (e) { }
+
+    // 3. Fallback to localStorage (Manual entry)
+    let key = localStorage.getItem('gemini_api_key');
+    if (!key) {
+        key = prompt("Please enter your Google Gemini API Key:");
+        if (key) {
+            localStorage.setItem('gemini_api_key', key);
+        }
+    }
+    return key;
+}
+
+function initGenAI() {
+    const apiKey = getApiKey();
+    if (apiKey) {
+        genAI = new GoogleGenerativeAI(apiKey);
+    } else {
+        console.warn("No API key provided");
+    }
+}
+
+initGenAI();
 
 // DOM Elements
 const chatMessages = document.getElementById('chat-messages');
@@ -20,7 +54,7 @@ async function sendMessage(message) {
     try {
         // Get the generative model for chat
         const chatModel = genAI.getGenerativeModel({
-            model: "gemini-flash-latest",
+            model: "gemini-2.5-flash",
             generationConfig: {
                 temperature: 0.7,
                 topK: 40,
@@ -92,7 +126,7 @@ generatePlanButton.addEventListener('click', async () => {
     try {
         // Get the generative model for workout plans
         const workoutModel = genAI.getGenerativeModel({
-            model: "gemini-flash-latest",
+            model: "gemini-1.5-flash-001",
             generationConfig: {
                 temperature: 0.9,
                 topK: 40,

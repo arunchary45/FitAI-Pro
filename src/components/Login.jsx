@@ -59,12 +59,12 @@ export function Login({ onLogin }) {
                         {step === 1 && (
                             <>
                                 <div className={styles.inputGroup}>
-                                    <label className={styles.label}>Full Name</label>
+                                    <label className={styles.label}>Username</label>
                                     <div className={styles.inputWrapper}>
                                         <User size={20} className={styles.inputIcon} />
                                         <input
                                             type="text"
-                                            placeholder="e.g. John Doe"
+                                            placeholder="Username"
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}
                                             className={styles.input}
